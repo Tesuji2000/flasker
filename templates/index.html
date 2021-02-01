@@ -1,0 +1,32 @@
+<h1>Hello World ! </h1>
+
+<p>This is my first webpage !!!</p>
+
+<a href={{crypto_link}}> Crypto Market Cap & Pricing Data Provided By Nomics </a>
+
+<p>Isn't this cool !</p>
+
+<p>My name is {{first_name}}</p>
+
+<p>{{stuff|safe}}</p>
+
+<p>this is a list {{a_list}}</p>
+
+<h3>things in my list</h3>
+
+{%for things in a_list%}
+    {{things}}<br/>
+{%endfor%}
+<!--
+<p>{{stuff}}</p>
+<p>{{stuff|striptags}}</p>
+<p>{{stuff|title}}</p>
+-->
+<bk/><bk/>
+<h4>the second item in my list is >>>  
+{{a_list.1|reverse}}
+</h4>
+
+{% if a_list.0 == 12 %}
+    {{a_list.0 * 100 + 3.1416}}
+{%endif%}
